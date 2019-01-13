@@ -12,7 +12,7 @@ public class ConsumerController {
     @Autowired
     ComputeClient computeClient;
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    @RequestMapping(value = "/sum", method = RequestMethod.GET)
     public Integer add() {
         return computeClient.add(10, 20);
     }
